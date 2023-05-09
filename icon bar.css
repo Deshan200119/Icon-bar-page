@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url('3d-rendering-yeti.jpg');
+    background-position: center;
+    background-size: cover;
+
+} 
+.main1{
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    transition: width 0.5s;
+}
+.main1:hover{
+    width: 270px;
+}
+.pro div{
+    display: none;
+}
+
+.main1:hover .pro div{
+    display: block;
+}
+
+.pro img{
+    width: 30px;
+    margin: auto ;
+    border: 3px solid white;
+    border-radius: 100%;
+    transition: 0.8s;
+
+}
+.pro img:hover{
+    scale: 1.5;
+}
+.main1:hover .pro img{
+    border: none;
+}
+.pro{
+    
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+
+.pro h2{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+.pro p{
+    font-size: 12px;
+}
+ul{
+    list-style: none;
+    margin-top: 60px;
+
+}
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 20px;
+    color: rgb(53, 54, 55);
+    padding: 5px;
+}
+ul li i{
+    font-size: 25px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #151515;
+}
+ul li i:hover{
+    scale: 1.2;
+}
+ul li p{
+    display: none;
+    transition: 0.5s;
+    position: relative;
+    font-size:small;
+}
+ul li p::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(53, 54, 55);
+    transition: 1s;
+}
+ul li p:hover::after{
+    width: 100%;
+}
+
+.main1:hover ul li p {
+    display: block;
+    cursor: pointer;
+}
+.main1:hover ul li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.main1:hover .pro{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+ul li:hover{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+}
+ul li:hover i{
+   color:rgb(53, 54, 55) ;
+}
+.text{
+    position: absolute;
+    top: 20%;
+    left: 31%;
+    text-align: left;
+    font-size: 50px;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    animation: back 150s linear infinite;
+  }
+  
+  @keyframes back {
+    100% {
+      background-position: 20000px 0;
+    }
+  }
+  .text-1{
+    position: absolute;
+    top: 70%;
+    left: 31%;
+    color: white;
+  }
+  button i{
+    color: #e4e4e4;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    transition: 0.8s;
+}
+.but{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 7px;
+    
+    
+}
+.button{
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin-left: -10;
+    margin-top: 10px;
+}
+.but:hover{
+    background: #e4e4e4;
+    border-radius: 10px;
+}
+button i:hover{
+    transform: scale(1.2);
+    color: black;
+}
+.butt{
+    padding: 5px 15px;
+    border-radius: 10px;
+    position: relative;
+    background: none;
+    border: 1px solid white; 
+    margin-right: 5px;
+    color: #e4e4e4;
+    transition: 1s;
+    margin-top: 15px;
+    
+}
+
+.butt:hover{
+    color: black;
+    background-color: white;
+}
+button:active{
+    scale: 1.2;
+}
